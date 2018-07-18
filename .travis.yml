@@ -9,6 +9,8 @@ before_install:
   - chmod +x mvnw
 script:
 - ./mvnw clean install -B
+   "mvn cobertura:cobertura"
+
 notifications:
 
     slack: countrykirudiha:8UbnwbsvzlCIlXXoxZ6ZPNiu
